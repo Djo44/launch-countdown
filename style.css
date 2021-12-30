@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap");
+
+body {
+  background-image: url("./images/bg-stars.svg"), url("./images/pattern-hills.svg");
+  background-size: cover, contain;
+  background-position: center, bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-color: hsl(234, 17%, 12%);
+  height: 100vh;
+  margin: 0;
+  font-family: "Red Hat Text", sans-serif;
+  color: white;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+span {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 4.5px;
+  font-weight: 500;
+  color: hsl(237, 18%, 59%);
+}
+
+.site-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 7px;
+  position: relative;
+  bottom: 150px;
+}
+
+.big-text {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 3rem;
+  color: hsl(345, 95%, 68%);
+  background-image: linear-gradient(to bottom, #191a24, #1f212f, #262839, #2d2f45, #343650);
+  width: 175px;
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.countdown-container div {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  top: 100%;
+}
+
+footer i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #8385a9;
+}
+
+footer i:hover {
+  color: hsl(345, 95%, 68%);
+}
+
+.countdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 565px) {
+  .big-text {
+    width: 75px;
+    height: 100px;
+  }
+
+  body {
+    background-size: cover, auto;
+  }
+
+  h1 {
+    font-size: 23px;
+    padding: 0 0px;
+    text-align: center;
+    margin-bottom: 110px;
+    position: static;
+  }
+
+  footer {
+    position: relative;
+    display: flex;
+    top: 50%;
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+  .big-text {
+    font-weight: 700;
+    font-size: 2.3rem;
+
+    margin: 0 2.2rem;
+  }
+
+  .countdown-container div {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
