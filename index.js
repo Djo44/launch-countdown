@@ -4,7 +4,7 @@ const minutesLeft = document.querySelector("#mins");
 const secondsLeft = document.querySelector("#seconds");
 
 function countDown() {
-  const newYears = "1 jan 2022";
+  const newYears = "1 jan 2023";
 
   const currentDate = new Date();
   const newYearsDate = new Date(newYears);
